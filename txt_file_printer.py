@@ -12,7 +12,7 @@ input_string = fd.read()
 multi_line_string = input_string.splitlines()
 
 hDC = win32ui.CreateDC()
-hDC.CreatePrinterDC()
+hDC.CreatePrinterDC(printer_name)
 hDC.StartDoc("Printing...")
 hDC.StartPage()
 for line in multi_line_string:
